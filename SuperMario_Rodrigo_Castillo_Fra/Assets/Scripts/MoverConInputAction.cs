@@ -17,6 +17,7 @@ public class MoverConInputAction : MonoBehaviour
     { 
         rb = GetComponent<Rigidbody2D>(); 
         accionMover.Enable(); 
+        accionSalto.Enable();
     } 
     void OnEnable() 
     { 
@@ -28,11 +29,14 @@ public class MoverConInputAction : MonoBehaviour
     } 
     void saltar(InputAction.CallbackContext context) 
     { 
-        rb.linearVelocityY = velocidadY; 
+    if(GetComponentInChildren<EstadoPersonaje>().estaEnPiso)
+        {
+            rb.linearVelocityY = velocidadY;
+        }
     } 
     void Update() 
     { 
         Vector2 movimiento = accionMover.ReadValue<Vector2>(); 
-        transform.position = (Vector2)transform.position + Time.deltaTime * velocidadX * movimiento; 
+        rb.linearVelocityX = movimiento.x * velocidadX;
     } 
 }
