@@ -1,0 +1,11 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/IU/EscenaMenu.uss?fileID=7433441132597879392&amp;guid=f31fad108a7a8314fa8fd0df3faab2a5&amp;type=3#EscenaMenu"/>
+    <ui:VisualElement name="Menu" class="menu" style="flex-grow: 1; color: rgb(255, 255, 254); font-size: 72px;">
+        <ui:Label text="Tarea Unity&#10;" name="Titulo" class="titulo" style="-unity-text-align: middle-center; justify-content: flex-end; text-overflow: clip; position: absolute; top: 0;"/>
+    </ui:VisualElement>
+    <ui:VisualElement name="Botones" class="botones" style="flex-grow: 1;">
+        <ui:Button text="Button" name="Creditos" class="boton-juego"/>
+        <ui:Button text="Button" name="Ayuda" class="boton-juego"/>
+        <ui:Button text="Button" name="Jugar" class="boton-juego"/>
+    </ui:VisualElement>
+</ui:UXML>
