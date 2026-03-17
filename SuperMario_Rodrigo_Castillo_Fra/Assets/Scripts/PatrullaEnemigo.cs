@@ -39,16 +39,16 @@ public class PatrullaEnemigo : MonoBehaviour
     }
     void Girar()
     {
-        if (Time.time > tiempoUltimoGiro + 0.2f) // Evitar giros demasiado rápidos
+        direccion *= -1; // Cambia la dirección
+        SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
+        if(direccion==1)
         {
-        direccion *= -1; // Cambiar la dirección
-        Vector3 escala = transform.localScale;
-        escala.x *= -1; // Voltear el sprite horizontalmente
-        transform.localScale = escala;
-
-        tiempoUltimoGiro = Time.time; // Actualizar el tiempo del último giro
+            spriteRenderer.flipX = false; // No voltear el sprite
         }
-
+        else
+        {
+            spriteRenderer.flipX = true; // Voltear el sprite horizontalmente
+        }
     }
 
 

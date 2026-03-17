@@ -435,7 +435,7 @@ GameObject:
   m_Component:
   - component: {fileID: 584262885}
   - component: {fileID: 584262884}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GameObject (1)
   m_TagString: Plataforma
   m_Icon: {fileID: 0}
@@ -2858,7 +2858,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2cabdec8d26c60549969089cd6107b85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PatrullaEnemigo
-  velocidad: 3
+  velocidad: 5
 --- !u!1001 &4347459556886244136
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2927,6 +2927,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 344378011873597050, guid: a86cc7fb22cfde746bb1fff070edebfa, type: 3}
+      propertyPath: m_Size.y
+      value: 0.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 988731917849175099, guid: a86cc7fb22cfde746bb1fff070edebfa, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3310384446102723337, guid: a86cc7fb22cfde746bb1fff070edebfa, type: 3}
       propertyPath: m_LocalPosition.x
       value: -9.13
@@ -2971,13 +2979,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: mario_01_7
       objectReference: {fileID: 0}
+    - target: {fileID: 6373396926434541746, guid: a86cc7fb22cfde746bb1fff070edebfa, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 9073865516847864538, guid: a86cc7fb22cfde746bb1fff070edebfa, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.003
+      value: 0.006
       objectReference: {fileID: 0}
     - target: {fileID: 9073865516847864538, guid: a86cc7fb22cfde746bb1fff070edebfa, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.222
+      value: -0.194
       objectReference: {fileID: 0}
     - target: {fileID: 9214902948810053331, guid: a86cc7fb22cfde746bb1fff070edebfa, type: 3}
       propertyPath: m_Size.y
