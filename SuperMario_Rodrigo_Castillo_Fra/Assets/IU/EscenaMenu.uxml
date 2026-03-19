@@ -1,11 +1,19 @@
 <ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/IU/EscenaMenu.uss?fileID=7433441132597879392&amp;guid=f31fad108a7a8314fa8fd0df3faab2a5&amp;type=3#EscenaMenu"/>
     <ui:VisualElement name="Menu" class="menu" style="flex-grow: 1; color: rgb(255, 255, 254); font-size: 72px;">
-        <ui:Label text="Tarea Unity&#10;" name="Titulo" class="titulo" style="-unity-text-align: middle-center; justify-content: flex-end; text-overflow: clip; position: absolute; top: 0;"/>
+        <ui:Label text="Tarea Unity&#10;" name="Titulo" class="titulo" style="-unity-text-align: middle-center; justify-content: flex-end; text-overflow: clip; position: absolute; top: 0; background-color: rgba(0, 0, 0, 0.18);"/>
+        <ui:VisualElement name="Botones" class="botones" style="flex-grow: 1; margin-top: 30px; margin-right: 15px; margin-bottom: 15px; margin-left: 15px; align-items: center; flex-direction: column-reverse; top: 20px; position: relative; left: 0; align-content: auto;">
+            <ui:Button text="Créditos " name="Creditos" class="boton-juego" style="bottom: 30px; width: 420px; height: 200px; padding-top: 0; transition-duration: 0.2s; transition-timing-function: ease-in-out; opacity: 1; display: flex; visibility: visible; overflow: visible; transition-property: all;"/>
+            <ui:Button text="Ayuda &#10;" name="Ayuda" class="boton-juego" style="width: 420px; height: 200px; transition-timing-function: ease-in-out; transition-property: all;"/>
+            <ui:Button text="Jugar" name="Jugar" class="boton-juego" style="top: 30px; height: 200px; width: 420px; transition-property: all; transition-timing-function: ease-in-out; transition-delay: 0s; transition-duration: 0.2s;"/>
+        </ui:VisualElement>
+        <ui:Button text="X" name="Salir" style="background-color: rgba(62, 62, 62, 0); position: absolute; top: 953px; left: 192px; width: 40px; height: 40px;"/>
+        <ui:Label text="Rodrigo Castillo Francisco A01799191" name="Nombre" style="font-size: 50px; -unity-text-align: upper-right;"/>
     </ui:VisualElement>
-    <ui:VisualElement name="Botones" class="botones" style="flex-grow: 1;">
-        <ui:Button text="Button" name="Creditos" class="boton-juego"/>
-        <ui:Button text="Button" name="Ayuda" class="boton-juego"/>
-        <ui:Button text="Button" name="Jugar" class="boton-juego"/>
+    <ui:VisualElement name="PantallaAyuda" style="flex-grow: 1; display: none; -unity-text-align: middle-center; align-self: center; justify-content: center; background-color: rgba(0, 0, 0, 0.39); width: 100%; position: absolute; height: 100%; text-overflow: clip; visibility: visible; opacity: 1; align-items: center; align-content: center; top: -4px; left: 0;">
+        <ui:Label text="Ayuda" name="AyudaTexto" style="position: absolute; top: 15px; left: auto; white-space: normal; -unity-text-align: middle-center; color: rgb(190, 220, 15); -unity-font-style: bold; justify-content: center; align-items: center; align-self: center; background-color: rgba(32, 31, 31, 0.45); align-content: center; display: flex; opacity: 1; font-size: 85px;"/>
+        <ui:VisualElement name="Contenedor" style="flex-grow: 1; -unity-text-align: middle-center; font-size: 45px; background-color: rgba(55, 55, 55, 0.18); display: flex;"/>
+        <ui:Label text="&quot;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.&quot;" name="Texto" style="justify-content: space-between; align-self: center; background-color: rgba(0, 0, 0, 0.39); position: absolute; top: 153px; left: 76px; height: 640px; width: 1737px; white-space: normal; font-size: 60px; color: rgb(217, 231, 25); display: flex;"/>
+        <ui:Button text="X" name="BotonSalir" style="background-color: rgba(62, 62, 62, 0); position: absolute; top: 145px; left: 1719px; width: 40px; height: 40px; display: flex; font-size: 80px; color: rgb(255, 255, 255);"/>
     </ui:VisualElement>
 </ui:UXML>
